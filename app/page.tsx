@@ -57,13 +57,16 @@ export default function Page() {
                 </p>
               </div>
               <div className="space-x-4">
-                <Link href="https://github.com" target="_blank">
+                <Link href="https://github.com/andresListorti" target="_blank">
                   <Button variant="outline" size="icon">
                     <Github className="h-4 w-4" />
                     <span className="sr-only">GitHub</span>
                   </Button>
                 </Link>
-                <Link href="https://linkedin.com" target="_blank">
+                <Link
+                  href="https://www.linkedin.com/in/andres-listorti-177485240/"
+                  target="_blank"
+                >
                   <Button variant="outline" size="icon">
                     <Linkedin className="h-4 w-4" />
                     <span className="sr-only">LinkedIn</span>
@@ -75,7 +78,7 @@ export default function Page() {
                     <span className="sr-only">Twitter</span>
                   </Button>
                 </Link>
-                <Link href="mailto:hello@example.com">
+                <Link href="mailto:andreslistorti@gmail.com">
                   <Button variant="outline" size="icon">
                     <Mail className="h-4 w-4" />
                     <span className="sr-only">Email</span>
