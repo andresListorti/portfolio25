@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail, Twitter } from "lucide-react"
-import Link from "next/link"
-import ContactForm from "./components/contact-form"
-import ProjectCard from "./components/project-card"
-import TechStack from "./components/tech-stack"
+import { Button } from "@/components/ui/button";
+import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import Link from "next/link";
+import ContactForm from "./components/contact-form";
+import ProjectCard from "./components/project-card";
+import TechStack from "./components/tech-stack";
 
 export default function Page() {
   return (
@@ -12,16 +12,27 @@ export default function Page() {
         <div className="container flex h-14 items-center">
           <div className="mr-4 hidden md:flex">
             <Link className="mr-6 flex items-center space-x-2" href="/">
-              <span className="hidden font-bold sm:inline-block">John.dev</span>
+              <span className="hidden font-bold sm:inline-block">
+                AndresListorti.dev
+              </span>
             </Link>
             <nav className="flex items-center space-x-6 text-sm font-medium">
-              <Link href="#about" className="transition-colors hover:text-foreground/80">
+              <Link
+                href="#about"
+                className="transition-colors hover:text-foreground/80"
+              >
                 About
               </Link>
-              <Link href="#projects" className="transition-colors hover:text-foreground/80">
+              <Link
+                href="#projects"
+                className="transition-colors hover:text-foreground/80"
+              >
                 Projects
               </Link>
-              <Link href="#contact" className="transition-colors hover:text-foreground/80">
+              <Link
+                href="#contact"
+                className="transition-colors hover:text-foreground/80"
+              >
                 Contact
               </Link>
             </nav>
@@ -41,8 +52,8 @@ export default function Page() {
                   Full Stack Developer
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Building digital experiences with modern technologies. Focused on creating elegant solutions to
-                  complex problems.
+                  Building digital experiences with modern technologies. Focused
+                  on creating elegant solutions to complex problems.
                 </p>
               </div>
               <div className="space-x-4">
@@ -77,13 +88,15 @@ export default function Page() {
 
         <section id="projects" className="py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">Projects</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
+              Projects
+            </h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <ProjectCard
                 title="E-commerce Platform"
                 description="A full-stack e-commerce platform built with Next.js, Prisma, and Stripe integration."
-                image="/placeholder.svg?height=400&width=600"
-                link="https://github.com"
+                image="https://res.cloudinary.com/dgiqb0ipg/image/upload/v1746228968/card1ecomm_mr7esj.png"
+                link="https://github.com/andresListorti/genaroFinal"
                 tags={["Next.js", "Prisma", "Stripe"]}
               />
               <ProjectCard
@@ -127,17 +140,25 @@ export default function Page() {
 
       <footer className="border-t">
         <div className="container flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6">
-          <p className="text-xs text-gray-500 dark:text-gray-400">© 2024 John.dev. All rights reserved.</p>
+          <p className="text-xs text-gray-500 dark:text-gray-400">
+            © 2025 andreslistorti@gmail.com All rights reserved.
+          </p>
           <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-            <Link className="text-xs hover:underline underline-offset-4" href="#">
+            <Link
+              className="text-xs hover:underline underline-offset-4"
+              href="#"
+            >
               Terms of Service
             </Link>
-            <Link className="text-xs hover:underline underline-offset-4" href="#">
+            <Link
+              className="text-xs hover:underline underline-offset-4"
+              href="#"
+            >
               Privacy
             </Link>
           </nav>
         </div>
       </footer>
     </div>
-  )
+  );
 }
