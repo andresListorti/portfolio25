@@ -122,11 +122,11 @@ export default function Page() {
                 tags={["React", "Node.js", "Socket.io"]}
               />
               <ProjectCard
-                title="IA - Prompt Generator"
+                title="IA - Chatbot"
                 description="An AI-powered chat interface with natural language processing capabilities."
                 image="/placeholder.svg?height=400&width=600"
-                link="https://github.com/andresListorti/IAGeneracionPrompts"
-                tags={["OpenAI", "Next.js", "TailwindCSS"]}
+                link="https://github.com/andresListorti/React-Native-Chatbot"
+                tags={["OpenAI", "React Native", "TailwindCSS", "TypeScript"]}
               />
               <ProjectCard
                 title="E-commerce NEXT"
