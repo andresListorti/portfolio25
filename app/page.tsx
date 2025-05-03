@@ -38,7 +38,12 @@ export default function Page() {
             </nav>
           </div>
           <Button variant="outline" className="ml-auto">
-            Resume
+            <Link
+              href="https://drive.google.com/file/d/1gT6qb8uN27dUFiHbApDt9nQKaFXvS_nW/view?usp=drive_link"
+              className="transition-colors hover:text-foreground/80"
+            >
+              Resume
+            </Link>
           </Button>
         </div>
       </header>
@@ -96,24 +101,45 @@ export default function Page() {
             </h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <ProjectCard
-                title="E-commerce Platform"
+                title="E-commerce Platform - Design"
                 description="A full-stack e-commerce platform built with Next.js, Prisma, and Stripe integration."
                 image="https://res.cloudinary.com/dgiqb0ipg/image/upload/v1746228968/card1ecomm_mr7esj.png"
+                link="https://github.com/andresListorti/andresListorti.github.io"
+                tags={["Next.js", "Prisma", "Stripe"]}
+              />
+              <ProjectCard
+                title="E-commerce Platform - Functionality"
+                description="A full-stack e-commerce platform built with Next.js, Prisma, and Stripe integration."
+                image="https://res.cloudinary.com/dgiqb0ipg/image/upload/v1746281682/Card2gen_h0rxrp.png"
                 link="https://github.com/andresListorti/genaroFinal"
                 tags={["Next.js", "Prisma", "Stripe"]}
               />
               <ProjectCard
-                title="Task Management App"
+                title="E-commerce API"
                 description="A real-time task management application with team collaboration features."
                 image="/placeholder.svg?height=400&width=600"
-                link="https://github.com"
+                link="https://github.com/andresListorti/ecommerce-api"
                 tags={["React", "Node.js", "Socket.io"]}
               />
               <ProjectCard
-                title="AI Chat Interface"
+                title="IA - Prompt Generator"
                 description="An AI-powered chat interface with natural language processing capabilities."
                 image="/placeholder.svg?height=400&width=600"
-                link="https://github.com"
+                link="https://github.com/andresListorti/IAGeneracionPrompts"
+                tags={["OpenAI", "Next.js", "TailwindCSS"]}
+              />
+              <ProjectCard
+                title="E-commerce NEXT"
+                description="An AI-powered chat interface with natural language processing capabilities."
+                image="/placeholder.svg?height=400&width=600"
+                link="https://github.com/andresListorti/genarox"
+                tags={["OpenAI", "Next.js", "TailwindCSS"]}
+              />
+              <ProjectCard
+                title="Academic Portfolio"
+                description="An AI-powered chat interface with natural language processing capabilities."
+                image="https://res.cloudinary.com/dgiqb0ipg/image/upload/v1746281762/cARD3_bwighl.png"
+                link="https://portfolio-andlist.netlify.app/"
                 tags={["OpenAI", "Next.js", "TailwindCSS"]}
               />
             </div>
